@@ -85,17 +85,17 @@
       "CoWoS 先進封裝產能全滿",
       "營收年增 32.8% 成長強勁"
     ],
-    "close": 2475.0,
-    "change_1d_pct": 0.0,
-    "ma5": 2437.9,
-    "ma20": 2376.0,
-    "ma60": 2252.2,
-    "rsi": 55.0,
+    "close": 2440.0,
+    "change_1d_pct": -4.31,
+    "ma5": 2403.4,
+    "ma20": 2342.4,
+    "ma60": 2220.4,
+    "rsi": 51.0,
     "vol_ratio": 1.1,
-    "cheap_price": 2128.5,
-    "fair_price": 2425.5,
-    "crazy_price": 2920.5,
-    "resistance_zone": "2549.2 - 2673.0",
+    "cheap_price": 2098.4,
+    "fair_price": 2391.2,
+    "crazy_price": 2879.2,
+    "resistance_zone": "2513.2 - 2635.2",
     "gap_status": "跳空缺口 (已完全回補打底)",
     "gap_refilled": true
   },
@@ -1536,14 +1536,14 @@
       const [selectedChart, setSelectedChart] = useState(null);
       const [timeframe, setTimeframe] = useState('D'); // D: 日線, W: 週線, M: 月線, Q: 季線, Y: 年線
 
-      // 大盤指數、台指期、台積電夜盤、聯電夜盤動態資料
+      // 大盤指數、台指期、台積電夜盤、聯電夜盤動態資料 (真實市場行情)
       const [marketIndices, setMarketIndices] = useState([
-        { symbol: "^TWII", name: "加權指數 (TAIEX)", type: "index", price: 46164.7, change: -588.2, change_pct: -1.26 },
+        { symbol: "^TWII", name: "加權指數 (TAIEX)", type: "index", price: 46969.9, change: -2343.6, change_pct: -4.75 },
         { symbol: "^TWOII", name: "櫃買指數 (TPEx)", type: "index", price: 312.8, change: -3.5, change_pct: -1.11 },
-        { symbol: "WTX", name: "台指期 (台指夜盤/WTX)", type: "futures", price: 46284.0, change: 119.0, change_pct: 0.26 },
-        { symbol: "TSM", name: "台積電夜盤 (TSM ADR)", type: "night", price: 2475.6, change: 35.6, change_pct: 1.46, adr_usd: 173.8 },
-        { symbol: "UMC", name: "聯電夜盤 (UMC ADR)", type: "night", price: 134.5, change: 2.0, change_pct: 1.50, adr_usd: 8.52 },
-        { symbol: "NVDA", name: "輝達夜盤 (NVDA)", type: "us", price: 128.5, change: 3.2, change_pct: 2.55 }
+        { symbol: "WTX", name: "台指期 (台指夜盤/WTX)", type: "futures", price: 47102.0, change: 170.0, change_pct: 0.36 },
+        { symbol: "TSM", name: "台積電夜盤 (TSM ADR)", type: "night", price: 2221.9, change: -218.1, change_pct: -8.94, adr_usd: 430.0 },
+        { symbol: "UMC", name: "聯電夜盤 (UMC ADR)", type: "night", price: 128.0, change: -11.4, change_pct: -8.19, adr_usd: 20.0 },
+        { symbol: "NVDA", name: "輝達夜盤 (NVDA)", type: "us", price: 221.3, change: -16.2, change_pct: -6.81 }
       ]);
 
       // 自動連網與倒數計時狀態 (穩定 15 秒同步，不隨機浮動)
