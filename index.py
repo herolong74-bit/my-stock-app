@@ -11,20 +11,24 @@ _CACHE = {
 CACHE_TTL = 3.0  # 快取 3 秒，避免高頻請求觸發外部 API 速率限制
 
 DEFAULT_STOCKS_METADATA = [
-    {"symbol": "2330.TW", "name": "台積電 (TSMC)", "market": "TW", "sector": "半導體晶圓代工", "base": 2440.0, "pe": 26.5, "yield": 1.4, "yoy": 36.2, "score": 96, "rating": "強力推薦", "kline": "🚀 多頭強勢創高", "reasons": ["CoWoS 先進封裝產能供不應求", "全球 AI 加速晶片 99% 由台積電代工"]},
-    {"symbol": "2454.TW", "name": "聯發科 (MediaTek)", "market": "TW", "sector": "AI晶片/IC設計", "base": 4165.0, "pe": 17.6, "yield": 4.6, "yoy": 28.5, "score": 90, "rating": "強力推薦", "kline": "📈 均線多頭發散", "reasons": ["天璣旗艦晶片與邊緣 AI 市占躍升", "ASIC 客製化晶片切入雲端大廠"]},
-    {"symbol": "2317.TW", "name": "鴻海 (Foxconn)", "market": "TW", "sector": "AI伺服器組裝巨頭", "base": 239.5, "pe": 15.2, "yield": 4.1, "yoy": 22.1, "score": 88, "rating": "看好偏多", "kline": "📈 多頭排列", "reasons": ["GB200 / NVL72 AI 伺服器垂直整合優勢", "全球雲端 CSP 訂單份額第一"]},
-    {"symbol": "3443.TW", "name": "創意 (Global Unichip)", "market": "TW", "sector": "矽智財/ASIC", "base": 7670.0, "pe": 35.9, "yield": 1.8, "yoy": 31.0, "score": 89, "rating": "強力推薦", "kline": "🚀 高檔放量突破", "reasons": ["台積電 3nm / CoWoS 設計夥伴", "北美頂級 CSP 客製化晶片量產"]},
-    {"symbol": "3017.TW", "name": "奇鋐 (AVC)", "market": "TW", "sector": "AI水冷散熱龍頭", "base": 3085.0, "pe": 22.4, "yield": 2.3, "yoy": 45.0, "score": 87, "rating": "強力推薦", "kline": "📈 沿月線多頭推進", "reasons": ["3D VC 與水冷板市佔率第一", "美系 CSP 獨家與主力水冷供應商"]},
-    {"symbol": "6669.TW", "name": "緯穎 (Wiwynn)", "market": "TW", "sector": "雲端AI伺服器純度最高", "base": 1905.0, "pe": 15.4, "yield": 3.8, "yoy": 48.0, "score": 85, "rating": "看好偏多", "kline": "📈 高檔強勢整理", "reasons": ["Meta / 微軟 AI 伺服器大單放量", "營收年增雙位數噴發"]},
+    {"symbol": "2330.TW", "name": "台積電 (TSMC)", "market": "TW", "sector": "半導體晶圓代工", "base": 2420.0, "pe": 26.5, "yield": 1.4, "yoy": 36.2, "score": 96, "rating": "強力推薦", "kline": "🚀 多頭強勢創高", "reasons": ["CoWoS 先進封裝產能供不應求", "全球 AI 加速晶片 99% 由台積電代工"]},
+    {"symbol": "3017.TW", "name": "奇鋐 (AVC)", "market": "TW", "sector": "AI水冷散熱龍頭", "base": 3315.0, "pe": 22.4, "yield": 2.3, "yoy": 45.0, "score": 95, "rating": "強力推薦", "kline": "🚀 沿月線多頭推進", "reasons": ["3D VC 與水冷板市佔率第一", "美系 CSP 獨家與主力水冷供應商"]},
+    {"symbol": "2454.TW", "name": "聯發科 (MediaTek)", "market": "TW", "sector": "AI晶片/IC設計", "base": 4250.0, "pe": 17.6, "yield": 4.6, "yoy": 28.5, "score": 94, "rating": "強力推薦", "kline": "📈 均線多頭發散", "reasons": ["天璣旗艦晶片與邊緣 AI 市占躍升", "ASIC 客製化晶片切入雲端大廠"]},
+    {"symbol": "2317.TW", "name": "鴻海 (Foxconn)", "market": "TW", "sector": "AI伺服器組裝巨頭", "base": 244.0, "pe": 15.2, "yield": 4.1, "yoy": 22.1, "score": 91, "rating": "看好偏多", "kline": "📈 多頭排列", "reasons": ["GB200 / NVL72 AI 伺服器垂直整合優勢", "全球雲端 CSP 訂單份額第一"]},
+    {"symbol": "3443.TW", "name": "創意 (Global Unichip)", "market": "TW", "sector": "矽智財/ASIC", "base": 7480.0, "pe": 35.9, "yield": 1.8, "yoy": 31.0, "score": 90, "rating": "強力推薦", "kline": "🚀 高檔放量突破", "reasons": ["台積電 3nm / CoWoS 設計夥伴", "北美頂級 CSP 客製化晶片量產"]},
+    {"symbol": "3661.TW", "name": "世芯-KY (Alchip)", "market": "TW", "sector": "特製AI晶片ASIC", "base": 3685.0, "pe": 42.0, "yield": 0.8, "yoy": 55.4, "score": 95, "rating": "強力推薦", "kline": "🚀 雲端巨頭晶片量產", "reasons": ["北美雲端 CSP 客製化晶片量產拉貨", "AI ASIC 領域具備領先技術壁壘"]},
+    {"symbol": "2382.TW", "name": "廣達 (Quanta)", "market": "TW", "sector": "AI伺服器代工龍頭", "base": 322.0, "pe": 16.5, "yield": 3.9, "yoy": 35.0, "score": 92, "rating": "強力推薦", "kline": "📈 多頭結構", "reasons": ["雲端三巨頭伺服器核心代工廠", "AI 伺服器營收比重超過五成"]},
+    {"symbol": "3231.TW", "name": "緯創 (Wistron)", "market": "TW", "sector": "AI伺服器GPU基板", "base": 182.5, "pe": 16.5, "yield": 4.1, "yoy": 24.2, "score": 89, "rating": "看好偏多", "kline": "📈 價量齊揚", "reasons": ["GPU 運算主板市佔率超過六成", "海外廠產能全開供不應求"]},
+    {"symbol": "2376.TW", "name": "技嘉 (Gigabyte)", "market": "TW", "sector": "AI伺服器/主機板", "base": 357.5, "pe": 20.4, "yield": 2.8, "yoy": 31.2, "score": 91, "rating": "強力推薦", "kline": "🚀 水冷伺服器爆發", "reasons": ["AI 伺服器營收年增雙位數推進", "三大法人大單鎖碼佈局"]},
+    {"symbol": "3324.TWO", "name": "雙鴻 (Auras)", "market": "TW", "sector": "AI水冷與CDU散熱", "base": 1425.0, "pe": 21.2, "yield": 2.5, "yoy": 42.1, "score": 93, "rating": "看好偏多", "kline": "📈 水冷技術強勢拉升", "reasons": ["液冷 CDU 分配器與水冷板出貨量飆升", "伺服器 TDP 功耗攀升帶動水冷滲透率"]},
+    {"symbol": "6669.TW", "name": "緯穎 (Wiwynn)", "market": "TW", "sector": "雲端AI伺服器純度最高", "base": 1845.0, "pe": 15.4, "yield": 3.8, "yoy": 48.0, "score": 94, "rating": "看好偏多", "kline": "📈 高檔強勢整理", "reasons": ["Meta / 微軟 AI 伺服器大單放量", "營收年增雙位數噴發"]},
+    {"symbol": "2303.TW", "name": "聯電 (UMC)", "market": "TW", "sector": "晶圓代工/中介層", "base": 133.0, "pe": 11.8, "yield": 5.6, "yoy": 8.4, "score": 86, "rating": "看好偏多", "kline": "🏰 高殖利率打底回升", "reasons": ["提供 CoWoS 關鍵 Interposer 中介層", "5.6% 高股息殖利率護體"]},
     {"symbol": "2308.TW", "name": "台達電 (Delta)", "market": "TW", "sector": "AI電源與液冷龍頭", "base": 1630.0, "pe": 24.0, "yield": 2.7, "yoy": 20.5, "score": 84, "rating": "看好偏多", "kline": "📈 穩健向上", "reasons": ["高瓦數 AI 伺服器電源市佔率超 60%", "整體微電網與液冷散熱整合方案優勢"]},
-    {"symbol": "3324.TWO", "name": "雙鴻 (Auras)", "market": "TW", "sector": "AI水冷與CDU散熱", "base": 1410.0, "pe": 21.2, "yield": 2.5, "yoy": 42.1, "score": 83, "rating": "看好偏多", "kline": "📈 水冷技術強勢拉升", "reasons": ["液冷 CDU 分配器與水冷板出貨量飆升", "伺服器 TDP 功耗攀升帶動水冷滲透率"]},
     {"symbol": "6213.TW", "name": "聯茂 (ITEQ)", "market": "TW", "sector": "高階銅箔基板CCL", "base": 799.0, "pe": 27.1, "yield": 2.8, "yoy": 29.4, "score": 85, "rating": "看好偏多", "kline": "📈 均線多頭", "reasons": ["M6/M7 高速低損耗銅箔基板認證通過", "AI 伺服器主板材料升級受惠者"]},
     {"symbol": "6451.TW", "name": "訊芯-KY (ShunSin)", "market": "TW", "sector": "CPO矽光子封測", "base": 360.5, "pe": 30.8, "yield": 1.5, "yoy": 38.6, "score": 83, "rating": "看好偏多", "kline": "🚀 強攻突破整理區", "reasons": ["博通 CPO 先進光學封裝主力夥伴", "下一代資料中心高速光傳輸標準確立"]},
-    {"symbol": "2382.TW", "name": "廣達 (Quanta)", "market": "TW", "sector": "AI伺服器代工龍頭", "base": 316.5, "pe": 16.5, "yield": 3.9, "yoy": 35.0, "score": 86, "rating": "強力推薦", "kline": "📈 多頭結構", "reasons": ["雲端三巨頭伺服器核心代工廠", "AI 伺服器營收比重超過五成"]},
-    {"symbol": "3234.TWO", "name": "光環 (LuxNet)", "market": "TW", "sector": "光通訊/矽光子CPO", "base": 168.0, "pe": 18.5, "yield": 2.1, "yoy": 55.4, "score": 93, "rating": "強力推薦", "kline": "🚀 噴出突破創高", "reasons": ["CPO 矽光子共同封裝技術驗證過關", "AI 巨量資料傳輸光收發模組急單"]},
+    {"symbol": "3234.TWO", "name": "光環 (LuxNet)", "market": "TW", "sector": "光通訊/矽光子CPO", "base": 176.5, "pe": 18.5, "yield": 2.1, "yoy": 55.4, "score": 93, "rating": "強力推薦", "kline": "🚀 噴出突破創高", "reasons": ["CPO 矽光子共同封裝技術驗證過關", "AI 巨量資料傳輸光收發模組急單"]},
     {"symbol": "3013.TW", "name": "晟銘電 (UNEGR)", "market": "TW", "sector": "水冷機殼與液冷散熱", "base": 94.7, "pe": 16.8, "yield": 3.2, "yoy": 63.8, "score": 85, "rating": "看好偏多", "kline": "📈 均線向上集結", "reasons": ["水冷機櫃產能擴建大單落實", "營收連續數月改寫歷史新高"]},
-    {"symbol": "NVDA", "name": "輝達 (NVIDIA)", "market": "US", "sector": "AI晶片霸主", "base": 221.3, "pe": 38.5, "yield": 0.1, "yoy": 125.0, "score": 98, "rating": "強力推薦", "kline": "🚀 全球算力霸主突破", "reasons": ["Blackwell 架構晶片產能售罄", "AI 資料中心全球份額超九成"]}
+    {"symbol": "NVDA", "name": "輝達 (NVIDIA)", "market": "US", "sector": "AI晶片霸主", "base": 214.13, "pe": 38.5, "yield": 0.1, "yoy": 125.0, "score": 98, "rating": "強力推薦", "kline": "🚀 全球算力霸主突破", "reasons": ["Blackwell 架構晶片產能售罄", "AI 資料中心全球份額超九成"]}
 ]
 
 
@@ -97,11 +101,11 @@ def get_live_data():
     # 1. 期交所真實台指期
     wtx = fetch_taifex_wtx() or {
         "symbol": "WTX", "name": "台指期 (台指夜盤/WTX)", "type": "futures",
-        "price": 48705.0, "change": -652.0, "change_pct": -1.32
+        "price": 47102.0, "change": 170.0, "change_pct": 0.36
     }
 
     # 2. 多線程同時並行抓取大盤、ADR 與全體股票即時最新價格
-    symbols_to_fetch = ["^TWII", "^TWOII", "TSM", "NVDA", "UMC"] + [s["symbol"] for s in DEFAULT_STOCKS_METADATA]
+    symbols_to_fetch = ["^TWII", "TSM", "NVDA", "UMC"] + [s["symbol"] for s in DEFAULT_STOCKS_METADATA]
     real_quotes = {}
     try:
         from concurrent.futures import ThreadPoolExecutor
@@ -113,22 +117,27 @@ def get_live_data():
         pass
 
     # 大盤與 ADR 即時數據
-    twii = real_quotes.get("^TWII") or {"price": 46969.87, "change": -2343.57, "change_pct": -4.75}
-    tsm = real_quotes.get("TSM") or {"price": 430.0, "change": -42.2, "change_pct": -8.94}
-    nvda = real_quotes.get("NVDA") or {"price": 221.3, "change": -16.17, "change_pct": -6.81}
-    umc = real_quotes.get("UMC") or {"price": 20.0, "change": -0.4, "change_pct": -1.96}
+    twii = real_quotes.get("^TWII") or {"price": 47111.26, "change": 145.29, "change_pct": 0.31}
+    tsm = real_quotes.get("TSM") or {"price": 412.61, "change": -10.22, "change_pct": -2.42}
+    nvda = real_quotes.get("NVDA") or {"price": 214.13, "change": -2.58, "change_pct": -1.19}
+    umc = real_quotes.get("UMC") or {"price": 19.82, "change": -0.92, "change_pct": -4.41}
 
     # 台積電夜盤現股折算價 (以真實 ADR % 換算現股)
-    tw2330_close = (real_quotes.get("2330.TW") or {}).get("price", 2440.0)
+    tw2330_close = (real_quotes.get("2330.TW") or {}).get("price", 2420.0)
     tsm_night_p = round(tw2330_close * (1 + tsm["change_pct"] / 100), 1)
     tsm_night_chg = round(tsm_night_p - tw2330_close, 1)
+
+    # 聯電夜盤現股折算價
+    tw2303_close = (real_quotes.get("2303.TW") or {}).get("price", 133.0)
+    umc_night_p = round(tw2303_close * (1 + umc["change_pct"] / 100), 2)
+    umc_night_chg = round(umc_night_p - tw2303_close, 2)
 
     indices = [
         {"symbol": "^TWII", "name": "加權指數 (TAIEX)", "type": "index", "price": round(twii["price"], 1), "change": round(twii["change"], 1), "change_pct": round(twii["change_pct"], 2)},
         {"symbol": "^TWOII", "name": "櫃買指數 (TPEx)", "type": "index", "price": 312.8, "change": -3.5, "change_pct": -1.11},
         wtx,
         {"symbol": "TSM", "name": "台積電夜盤 (TSM ADR)", "type": "night", "price": tsm_night_p, "change": tsm_night_chg, "change_pct": tsm["change_pct"], "adr_usd": round(tsm["price"], 2)},
-        {"symbol": "UMC", "name": "聯電夜盤 (UMC ADR)", "type": "night", "price": 128.0, "change": -2.5, "change_pct": umc["change_pct"], "adr_usd": round(umc["price"], 2)},
+        {"symbol": "UMC", "name": "聯電夜盤 (UMC ADR)", "type": "night", "price": umc_night_p, "change": umc_night_chg, "change_pct": umc["change_pct"], "adr_usd": round(umc["price"], 2)},
         {"symbol": "NVDA", "name": "輝達夜盤 (NVDA)", "type": "us", "price": round(nvda["price"], 2), "change": round(nvda["change"], 2), "change_pct": round(nvda["change_pct"], 2)}
     ]
 
